@@ -1,4 +1,5 @@
 body {
+    background-color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ ul {
 
 .title-container::before,
 .title-container::after {
-    background: #333;
+    background: white;
     content: " ";
     position: absolute;
     display: inline-block;
@@ -33,11 +34,11 @@ ul {
 }
 
 .title-container::before {
-    left: 25%;
+    left: 35%;
 }
 
 .title-container::after {
-    right: 25%;
+    right: 35%;
 }
 
 h2 {
@@ -107,4 +108,57 @@ footer {
 	max-width: 1300px;
 	text-align: left;
 	margin: 0 auto;
+}
+
+.main-photo {
+    max-width: 100%; /* Ensure the container doesn't exceed the width of the viewport */
+    max-height: 100vh; /* Ensure the container doesn't exceed the height of the viewport */
+    text-align: center; /* Center the image horizontally */
+    overflow: hidden;
+}
+
+.main-photo img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+    width: auto; /* Ensure the image maintains its aspect ratio */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
+@media (min-width: 1921px) {
+    /* If screen width is larger than 1920px, set a fixed width for the container */
+    .container {
+        width: 1920px;
+    }
+}
+
+@media (min-height: 1081px) {
+    /* If screen height is larger than 1080px, set a fixed height for the container */
+    .container {
+        height: 1080px;
+    }
+}
+
+.Exp,
+.About,
+.Contact {
+    background-color: #000000;
+
+}
+
+.Exp h2,
+.About h2,
+.Contact h2 {
+    color: white;
+}
+
+#section-2 {
+    background-color: #062f4f;
+}
+
+#section-3 {
+    background-color: #813772;
+}
+
+#section-4 {
+    background-color: #882601;
 }
