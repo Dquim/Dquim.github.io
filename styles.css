@@ -21,7 +21,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #062F4F; /* Set background color of the scrollbar handle */
+    background: #6D7993; /* Set background color of the scrollbar handle */
     border-radius: 4px; /* Set border radius of the scrollbar handle */
 }
 
@@ -109,7 +109,7 @@ p {
 
 /* Footer Styling */
 footer {
-    background-color: #813772; /* Set footer background color */
+    background-color: #333333; /* Set footer background color */
     color: #FFFFFF; /* Set text color of footer to white */
     padding: 20px; /* Add padding to footer */
     text-align: center; /* Center align text in footer */
