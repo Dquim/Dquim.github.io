@@ -12,6 +12,9 @@ function isAnyPartInViewport(element) {
 // Function to handle scroll event
 function handleScroll() {
     var sections = document.querySelectorAll('.section');
+    var footer = document.querySelector('footer');
+
+    // Check each section
     sections.forEach(function(section) {
         if (isAnyPartInViewport(section)) {
             // Set opacity to 1 if any part of the section is in the viewport
@@ -21,6 +24,15 @@ function handleScroll() {
             section.style.opacity = 0;
         }
     });
+
+    // Check the footer
+    if (isAnyPartInViewport(footer)) {
+        // Set opacity to 1 if any part of the footer is in the viewport
+        footer.style.opacity = 1;
+    } else {
+        // Set opacity to 0 if footer is not in the viewport
+        footer.style.opacity = 0;
+    }
 }
 
 // Add scroll event listener
@@ -28,4 +40,3 @@ window.addEventListener('scroll', handleScroll);
 
 // Trigger handleScroll on page load
 window.addEventListener('load', handleScroll);
-
