@@ -62,11 +62,11 @@ ul {
 }
 
 .title-container::before {
-    left: calc(50% - 225px); /* Position pseudo element before title */
+    left: calc(50% - 250px); /* Position pseudo element before title */
 }
 
 .title-container::after {
-    right: calc(50% - 225px); /* Position pseudo element after title */
+    right: calc(50% - 250px); /* Position pseudo element after title */
 }
 
 /* Heading 2 Styling */
